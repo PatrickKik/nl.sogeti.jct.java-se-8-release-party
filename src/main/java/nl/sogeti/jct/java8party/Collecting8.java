@@ -1,23 +1,20 @@
 package nl.sogeti.jct.java8party;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
- * Collecting with a parallel stream and a custom collector.
+ * Collecting with a parallel stream and a mapper.
  */
-public class Collection8 {
+public class Collecting8 {
 
     public static void main(String[] args) {
 
         List<String> names = Arrays.asList("Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf");
 
-        Set<Person> persons = names.parallelStream().collect(
-                HashSet<Person>::new,                     // Will be called once per fork.
-                (set, name) -> set.add(new Person(name)), // Will be called for every element in the stream.
-                (left, right) -> left.addAll(right));     // Will be called once per join.
+        Set<Person> persons = names.parallelStream().map(Person::new).collect(Collectors.toSet());
 
         System.out.println(persons);
     }
