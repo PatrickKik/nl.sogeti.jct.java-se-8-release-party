@@ -3,7 +3,7 @@ package nl.sogeti.jct.java8party;
 /**
  * A car.
  */
-public class Car {
+class Car {
 
     private String brand;
     private String color;
@@ -14,7 +14,7 @@ public class Car {
      * @param brand Brand
      * @param color Color
      */
-    public Car(String brand, String color) {
+    Car(String brand, String color) {
         this.brand = brand;
         this.color = color;
     }
@@ -30,14 +30,14 @@ public class Car {
     /**
      * @return Brand
      */
-    public String getBrand() {
+    String getBrand() {
         return brand;
     }
 
     /**
      * @return Color
      */
-    public String getColor() {
+    String getColor() {
         return color;
     }
 }
