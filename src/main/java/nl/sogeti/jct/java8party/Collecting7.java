@@ -24,16 +24,4 @@ public class Collecting7 {
         System.out.println(persons);
     }
 
-    static class Person {
-        private String name;
-
-        Person(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public String toString() {
-            return this.name;
-        }
-    }
 }
