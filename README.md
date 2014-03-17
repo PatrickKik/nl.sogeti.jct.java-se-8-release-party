@@ -10,3 +10,20 @@ It's up to you to rewrite this to Java SE 8.
 
 The latter is the same example, but it makes  use of Java SE 8.
 Note that it is not *the* answer, but *a* answer.
+
+Using the Javadocs en the Java Tutorials would give you all the answers.
+http://docs.oracle.com/javase/tutorial/index.html
+
+Examples
+--------
+
+Examples are sorted by category and from easy to hard.
+
+Join             : new API
+NewListWhenNoList: new API
+Comparator       : Lambdas
+ForEach          : Lambdas
+Filtering        : Lambdas
+Collecting       : Stream API
+CollectingAgain  : Stream API
+NextFriday       : new Date Time API
