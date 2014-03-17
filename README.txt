@@ -17,13 +17,17 @@ http://docs.oracle.com/javase/tutorial/index.html
 Examples
 --------
 
-Examples are sorted by category and from easy to hard.
+Examples are sorted by category and from easy to hard:
 
-Join             : new API
-NewListWhenNoList: new API
-Comparator       : Lambdas
-ForEach          : Lambdas
-Filtering        : Lambdas
-Collecting       : Stream API
-CollectingAgain  : Stream API
-NextFriday       : new Date Time API
+ * new API
+  * Join
+  * NewListWhenNoList
+ * Lambdas
+  * Comparator
+  * ForEach
+  * Filtering
+ * Stream API
+  * Collecting
+  * CollectingAgain
+ * new Date Time API
+  * NextFriday
